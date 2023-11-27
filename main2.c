@@ -1,5 +1,9 @@
 #include <stdio.h>
-#include <math.h>
+
+/**
+ *
+ */
+
 
 /**
  * main - factors
@@ -23,7 +27,7 @@ int main(int argc, char **argv)
 		return (-1);
 	while (fscanf(fd, "%lu\n", &n) != EOF)
 	{
-		it = sqrt(n);
+		it  = n / 2;
 		for (i = 2; i <= it; i++)
 		{
 			if (n % i == 0)
